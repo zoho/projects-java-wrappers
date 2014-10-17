@@ -368,9 +368,11 @@ public class BugParser
 		
 		JSONObject jsonObject = new JSONObject(response.trim());
 		
-		if(jsonObject.has("severity_details"))
+		JSONObject defaultFields = jsonObject.getJSONObject("defaultfields");  //No I18N
+		
+		if(defaultFields.has("severity_details"))
 		{
-			JSONArray severityDetails = jsonObject.getJSONArray("severity_details");	//No I18N
+			JSONArray severityDetails = defaultFields.getJSONArray("severity_details");	//No I18N
 			
 			List<HashMap<String, Object>> severitydetails = new ArrayList<HashMap<String,Object>>();
 			
@@ -384,9 +386,9 @@ public class BugParser
 			defaultfield.setSeverityDetails(severitydetails);
 		}
 		
-		if(jsonObject.has("status_deatils"))
+		if(defaultFields.has("status_deatils"))
 		{
-			JSONArray statusDeatils = jsonObject.getJSONArray("status_deatils");	//No I18N
+			JSONArray statusDeatils = defaultFields.getJSONArray("status_deatils");	//No I18N
 			
 			List<HashMap<String, Object>> statusdeatils = new ArrayList<HashMap<String,Object>>();
 			
@@ -400,9 +402,9 @@ public class BugParser
 			defaultfield.setStatusDeatils(statusdeatils);
 		}
 		
-		if(jsonObject.has("module_details"))
+		if(defaultFields.has("module_details"))
 		{
-			JSONArray moduleDetails = jsonObject.getJSONArray("module_details");	//No I18N
+			JSONArray moduleDetails = defaultFields.getJSONArray("module_details");	//No I18N
 			
 			List<HashMap<String, Object>> moduledetails = new ArrayList<HashMap<String,Object>>();
 			
@@ -416,9 +418,9 @@ public class BugParser
 			defaultfield.setModuleDetails(moduledetails);
 		}
 		
-		if(jsonObject.has("priority_details"))
+		if(defaultFields.has("priority_details"))
 		{
-			JSONArray priorityDetails = jsonObject.getJSONArray("priority_details");	//No I18N
+			JSONArray priorityDetails = defaultFields.getJSONArray("priority_details");	//No I18N
 			
 			List<HashMap<String, Object>> prioritydetails = new ArrayList<HashMap<String,Object>>();
 			
@@ -433,9 +435,9 @@ public class BugParser
 			defaultfield.setPriorityDetails(prioritydetails);
 		}
 		
-		if(jsonObject.has("classification_details"))
+		if(defaultFields.has("classification_details"))
 		{
-			JSONArray classificationDetails = jsonObject.getJSONArray("classification_details");	//No I18N
+			JSONArray classificationDetails = defaultFields.getJSONArray("classification_details");	//No I18N
 			
 			List<HashMap<String, Object>> classificationdetails = new ArrayList<HashMap<String,Object>>();
 			

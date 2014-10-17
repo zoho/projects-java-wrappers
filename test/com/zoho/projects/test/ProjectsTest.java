@@ -41,6 +41,8 @@ import com.zoho.projects.model.Tasklist;
 import com.zoho.projects.model.Tasklog;
 import com.zoho.projects.model.TimelogList;
 import com.zoho.projects.model.User;
+import com.zoho.projects.model.Customfield;
+import com.zoho.projects.model.Defaultfield;
 
 import com.zoho.projects.service.ZohoProjects;
 
@@ -189,6 +191,14 @@ public class ProjectsTest
 				
 				Task updateTask = tasksAPI.update(projectId, task);
 				
+				List<Task> getSubtasks = tasksAPI.getSubtasks(projectId, taskId, null); 
+				
+				Comment addComment = tasksAPI.addComment(projectId, taskId, "Test comment");	//No I18N
+				
+				List<Comment> getComments = tasksAPI.getComments(projectId, taskId, null);
+				
+				String deleteComment = tasksAPI.deleteComment(projectId, taskId, Long.toString(getComments.get(0).getId()));
+				
 				String deleteTask = tasksAPI.delete(projectId, String.valueOf(task.getId()));
 				
 				
@@ -265,6 +275,10 @@ public class ProjectsTest
 				
 				Bug updateBug = bugsAPI.update(projectId, getBug);
 				
+				List<Customfield> customfields = bugsAPI.getCustomFields(projectId); 
+				
+				Defaultfield defaultField = bugsAPI.getDefaultFields(projectId);
+				
 				String deleteBug = bugsAPI.delete(projectId, bugId);
 				
 				
@@ -311,7 +325,7 @@ public class ProjectsTest
 				
 				comment.setContent("URL changes not added in the document.");	//No I18N
 				
-				Comment addComment = forumsAPI.addComment(projectId, forumId, comment);
+				Comment addForumComment = forumsAPI.addComment(projectId, forumId, comment);
 				
 				
 				
