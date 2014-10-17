@@ -740,7 +740,7 @@ public class ZohoHTTPClient
 		request.setUseCaches(false);
 		
 		request.setRequestProperty("Accept-Charset", "UTF-8");	//No I18N
-		request.setRequestProperty("User-Agent", "ZohoBooks-Java-Wrappers/1.0");	//No I18N
+		request.setRequestProperty("User-Agent", "ZohoProjects-Java-Wrappers/1.0");	//No I18N
 		
 		request.setConnectTimeout(60 * 1000);
 		request.setReadTimeout(80 * 1000);
