@@ -17,8 +17,6 @@ public class API
 	
 		public static String baseURL = "https://projectsapi.zoho.com/restapi";	//No I18N
 		
-		//public static String baseURL = "http://mani-1649.csez.zohocorpin.com:9090/restapi"; //No I18N
-		
 		protected String authToken;
 		
 		protected String portalId;
