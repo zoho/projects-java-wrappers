@@ -32,6 +32,7 @@ public class Task
 	private String duration;
 	
 	private String url;
+	private String subtaskUrl;
 	private String timesheetUrl;
 	
 	private List<Owner> owners;
@@ -378,6 +379,28 @@ public class Task
 	public String getURL()
 	{
 		return url;
+	}
+	
+	/**
+	 * Set the subtask URL.
+	 * 
+	 * @param subtaskUrl URL for the subtask.
+	 */
+	
+	public void setSubtaskURL(String subtaskUrl)
+	{
+		this.subtaskUrl = subtaskUrl;
+	}
+	
+	/**
+	 * Get the subtask URL.
+	 * 
+	 * @return Returns the subtask url.
+	 */
+	
+	public String getSubtaskURL()
+	{
+		return subtaskUrl;
 	}
 	
 	/**

@@ -208,6 +208,10 @@ public class TaskParser
 			{
 				task.setURL(link.getJSONObject("self").getString("url"));
 			}
+			if(link.has("subtask"))
+			{
+				task.setSubtaskURL(link.getJSONObject("subtask").getString("url"));	//No I18N
+			}
 			if(link.has("timesheet"))
 			{
 				task.setTimesheetURL(link.getJSONObject("timesheet").getString("url"));
