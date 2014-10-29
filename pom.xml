@@ -11,7 +11,7 @@
 	<version>1.0</version>
 
 	<name>projects-java-wrappers</name>
-	<url>http://git/zoho/projects-java-wrappers.git</url>
+	<url>https://github.com/zoho/projects-java-wrappers</url>
 
 	<organization>
 		<name>Zoho</name>
@@ -19,9 +19,9 @@
 	</organization>
 	
 	<scm>
-		<connection>scm:git@git:zoho/projects-java-wrappers.git</connection>
-		<developerConnection>scm:git@git:zoho/projects-java-wrappers.git</developerConnection>
-		<url>http://git/zoho/projects-java-wrappers.git</url>
+		<connection>scm:git@github.com:zoho/projects-java-wrappers.git</connection>
+		<developerConnection>scm:git@github.com:zoho/projects-java-wrappers.git</developerConnection>
+		<url>https://github.com/zoho/projects-java-wrappers.git</url>
 	</scm>
 
 	<dependencies>
