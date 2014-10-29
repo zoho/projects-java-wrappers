@@ -70,13 +70,13 @@ Once you're done with importing the requisite classes, you'll have to proceed to
 
 Now there are two ways of creating an instance of PortalsAPI.
 
-1)Pass the AuthToken and create a PortalsAPI instance. 
+1) Pass the AuthToken and create a PortalsAPI instance. 
 
 Sample code:
 
         		PortalsAPI portalsAPI = new PortalsAPI("{auth_token}");
 
-2)Pass the AuthToken and PortalId to first create an instance of ZohoProjects, and then proceed to get the instance of PortalsAPI. 
+2) Pass the AuthToken and PortalId to first create an instance of ZohoProjects, and then proceed to get the instance of PortalsAPI. 
 
 Sample code:
 
