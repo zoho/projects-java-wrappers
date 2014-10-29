@@ -16,6 +16,7 @@ public class Project
 	
 	private long id;
 	private String name;
+	private long templateId;
 	private String status;
 	private String createdDate;
 	private String createdDateFormat;
@@ -91,6 +92,28 @@ public class Project
 	public String getName()
 	{
 		return name;
+	}
+	
+	/**
+	 * Set the template id of the project.
+	 * 
+	 * @param templateId ID of the template.
+	 */
+	
+	public void setTemplateId(long templateId)
+	{
+		this.templateId = templateId;
+	}
+	
+	/**
+	 * Get the template id of the project.
+	 * 
+	 * @return Returns the template id.
+	 */
+	
+	public long getTemplateId()
+	{
+		return templateId;
 	}
 	
 	/**
@@ -694,6 +717,10 @@ public class Project
 		if(status != null && !status.equals(""))
 		{
 			requestBody.put("status", status);
+		}
+		if((Long)templateId != null && templateId > 0)
+		{
+			requestBody.put("template_id", templateId);
 		}
 		
 		return requestBody;
