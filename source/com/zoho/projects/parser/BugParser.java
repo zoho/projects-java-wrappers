@@ -368,7 +368,7 @@ public class BugParser
 		
 		JSONObject jsonObject = new JSONObject(response.trim());
 		
-		JSONObject defaultFields = jsonObject.getJSONObject("defaultfields");  //No I18N
+		JSONObject defaultFields = jsonObject.getJSONObject("defaultfields"); 	//No I18N
 		
 		if(defaultFields.has("severity_details"))
 		{

@@ -17,6 +17,7 @@ public class Task
 {
 	
 	private long id;
+	private String idString;
 	private String name;
 	private boolean completed;
 	private String createdBy;
@@ -47,8 +48,7 @@ public class Task
 	
 	private Tasklist tasklist;
 	
-	
-	
+
 	/**
 	 * Set the task id.
 	 * 
@@ -69,6 +69,28 @@ public class Task
 	public long getId()
 	{
 		return id;
+	}
+	
+	/**
+	 * Set the task id as string.
+	 * 
+	 * @param idString Task id as string.
+	 */
+	
+	public void setIdString(String idString) 
+	{
+		this.idString = idString;
+	}
+	
+	/**
+	 * Get the task id as string.
+	 * 
+	 * @return Returns the task id string.
+	 */
+	
+	public String getIdString() 
+	{
+		return idString;
 	}
 	
 	/**

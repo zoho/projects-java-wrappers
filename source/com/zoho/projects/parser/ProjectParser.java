@@ -95,6 +95,10 @@ public class ProjectParser
 		{
 			project.setId(jsonObject.getLong("id"));	//No I18N
 		}
+		if(jsonObject.has("id_string"))
+		{
+			project.setIdString(jsonObject.getString("id_string"));
+		}
 		if(jsonObject.has("name"))
 		{
 			project.setName(jsonObject.getString("name"));

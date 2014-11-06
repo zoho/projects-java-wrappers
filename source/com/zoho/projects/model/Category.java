@@ -14,7 +14,7 @@ import java.util.HashMap;
 public class Category 
 {
 	
-	private long id;
+	private String id;
 	private String name;
 	
 	
@@ -25,7 +25,7 @@ public class Category
 	 * @param id ID of the category.
 	 */
 	
-	public void setId(long id)
+	public void setId(String id)
 	{
 		this.id = id;
 	}
@@ -36,7 +36,7 @@ public class Category
 	 * @return Returns the category id.
 	 */
 	
-	public long getId()
+	public String getId()
 	{
 		return id;
 	}

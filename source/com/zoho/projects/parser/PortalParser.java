@@ -71,6 +71,10 @@ public class PortalParser
 		{
 			portal.setId(jsonObject.getLong("id"));	//No I18N
 		}
+		if(jsonObject.has("id_string"))
+		{
+			portal.setIdString(jsonObject.getString("id_string"));
+		}
 		if(jsonObject.has("name"))
 		{
 			portal.setName(jsonObject.getString("name"));

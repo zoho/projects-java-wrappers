@@ -96,6 +96,10 @@ public class TaskParser
 		{
 			task.setId(jsonObject.getLong("id"));	//No I18N
 		}
+		if(jsonObject.has("id_string"))
+		{
+			task.setIdString(jsonObject.getString("id_string"));
+		}
 		if(jsonObject.has("name"))
 		{
 			task.setName(jsonObject.getString("name"));
@@ -206,7 +210,7 @@ public class TaskParser
 				
 			if(link.has("self"))
 			{
-				task.setURL(link.getJSONObject("self").getString("url"));
+				task.setURL(link.getJSONObject("self").getString("url")); //No I18N
 			}
 			if(link.has("subtask"))
 			{
@@ -214,7 +218,7 @@ public class TaskParser
 			}
 			if(link.has("timesheet"))
 			{
-				task.setTimesheetURL(link.getJSONObject("timesheet").getString("url"));
+				task.setTimesheetURL(link.getJSONObject("timesheet").getString("url")); //No I18N
 			}
 		}
 		

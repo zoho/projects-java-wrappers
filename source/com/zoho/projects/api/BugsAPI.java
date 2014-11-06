@@ -170,7 +170,7 @@ public class BugsAPI extends API
 	
 	public Defaultfield getDefaultFields(String projectId)throws Exception
 	{
-		String url = getBaseURL()+"/projects/"+projectId+"/defaultfields/";	//No I18N
+		String url = getBaseURL()+"/projects/"+projectId+"/bugs/defaultfields/";	//No I18N
 		
 		String response = ZohoHTTPClient.get(url, getQueryMap());
 		
@@ -189,7 +189,7 @@ public class BugsAPI extends API
 	
 	public List<Customfield> getCustomFields(String projectId)throws Exception
 	{
-		String url = getBaseURL()+"/projects/"+projectId+"/customfields/";	//No I18N
+		String url = getBaseURL()+"/projects/"+projectId+"/bugs/customfields/";	//No I18N
 		
 		String response = ZohoHTTPClient.get(url, getQueryMap());
 		

@@ -224,7 +224,7 @@ public class ZohoHTTPClient
 					if(fileBody.get(key) instanceof ArrayList)
 					{
 			
-						ArrayList fileList = (ArrayList) fileBody.get(key);
+						ArrayList<?> fileList = (ArrayList<?>) fileBody.get(key);
 			
 				
 						for(int i = 0; i < fileList.size(); i++)
@@ -426,7 +426,7 @@ public class ZohoHTTPClient
 					if(fileBody.get(key) instanceof ArrayList)
 					{
 			
-						ArrayList fileList = (ArrayList) fileBody.get(key);
+						ArrayList<?> fileList = (ArrayList<?>) fileBody.get(key);
 			
 				
 						for(int i = 0; i < fileList.size(); i++)

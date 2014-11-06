@@ -95,6 +95,10 @@ public class TasklistParser
 		{
 			tasklist.setId(jsonObject.getLong("id"));	//No I18N
 		}
+		if(jsonObject.has("id_string"))
+		{
+			tasklist.setIdString(jsonObject.getString("id_string"));
+		}
 		if(jsonObject.has("name"))
 		{
 			tasklist.setName(jsonObject.getString("name"));

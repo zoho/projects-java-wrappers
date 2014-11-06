@@ -232,7 +232,7 @@ public class ForumParser
 		
 		if(jsonObject.has("id"))
 		{
-			category.setId(jsonObject.getLong("id"));	//No I18N
+			category.setId(jsonObject.getString("id"));	//No I18N
 		}
 		if(jsonObject.has("name"))
 		{

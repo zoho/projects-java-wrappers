@@ -15,6 +15,7 @@ public class Project
 {
 	
 	private long id;
+	private String idString;
 	private String name;
 	private long templateId;
 	private String status;
@@ -71,6 +72,29 @@ public class Project
 	{
 		return id;
 	}
+	
+	/**
+	 * Set the project id as string.
+	 * 
+	 * @param idString Project id as string.
+	 */
+	
+	public void setIdString(String idString) 
+	{
+		this.idString = idString;
+	}
+	
+	/**
+	 * Get the project id as string.
+	 * 
+	 * @return Returns the project id as string.
+	 */
+	
+	public String getIdString() 
+	{
+		return idString;
+	}
+
 	
 	/**
 	 * Set the project name.

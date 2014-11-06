@@ -15,6 +15,7 @@ public class Tasklist
 {
 	
 	private long id;
+	private String idString;
 	private String name;
 	private boolean completed;
 	private String createdTime;
@@ -56,6 +57,28 @@ public class Tasklist
 		return id;
 	}
 	
+	/**
+	 * Set the task list id as string.
+	 * 
+	 * @param idString Task list id as string.
+	 */
+	
+	public void setIdString(String idString) 
+	{
+		this.idString = idString;
+	}
+	
+	/**
+	 * Get the task list id as string.
+	 * 
+	 * @return Returns the task list id string.
+	 */
+	
+	public String getIdString() 
+	{
+		return idString;
+	}
+
 	/**
 	 * Set the task list name.
 	 * 

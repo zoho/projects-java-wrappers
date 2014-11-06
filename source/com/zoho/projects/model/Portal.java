@@ -13,6 +13,7 @@ public class Portal
 {
 	
 	private long id;
+	private String idString;
 	private String name;
 	private boolean isDefault;
 	private String gmtTimeZone;
@@ -51,6 +52,28 @@ public class Portal
 	public long getId()
 	{
 		return id;
+	}
+	
+	/**
+	 * Set the portal id as string.
+	 * 
+	 * @param idString Portal Id string.
+	 */
+	
+	public void setIdString(String idString) 
+	{
+		this.idString = idString;
+	}
+	
+	/**
+	 * Get the portal id as string.
+	 * 
+	 * @return Returns the portal id string.
+	 */
+	
+	public String getIdString() 
+	{
+		return idString;
 	}
 	
 	/**
