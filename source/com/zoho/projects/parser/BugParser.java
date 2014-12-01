@@ -386,9 +386,9 @@ public class BugParser
 			defaultfield.setSeverityDetails(severitydetails);
 		}
 		
-		if(defaultFields.has("status_deatils"))
+		if(defaultFields.has("status_details"))
 		{
-			JSONArray statusDeatils = defaultFields.getJSONArray("status_deatils");	//No I18N
+			JSONArray statusDeatils = defaultFields.getJSONArray("status_details");	//No I18N
 			
 			List<HashMap<String, Object>> statusdeatils = new ArrayList<HashMap<String,Object>>();
 			
@@ -470,7 +470,7 @@ public class BugParser
 		
 		HashMap<String, Object> hashMap = new HashMap<String, Object>();
 		
-		Iterator<String> keyIterator = jsonObject.keys();
+		Iterator<?> keyIterator = jsonObject.keys();
 		
 		while (keyIterator.hasNext()) 
 		{
